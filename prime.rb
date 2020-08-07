@@ -1,12 +1,8 @@
-# Add  code here!
-
-r
-
-
-require 'prime'
-
-Prime.each(27) do |prime|
-  p prime
+def prime(num)
+  n = 2
+  while n < num
+    return false if num % n == 0
+    n += 1
+  end
+  true
 end
-
-#=> 2, 3, 5, 7, 11, 13, 17, 19, 23
